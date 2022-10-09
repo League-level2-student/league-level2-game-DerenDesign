@@ -18,6 +18,8 @@ public class PacMan {
 		frame.setSize(WIDTH,HEIGHT);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.addKeyListener(panel);
+		frame.addMouseMotionListener(panel);
+		frame.addMouseListener(panel);
 		
 	}
 	public static void main(String[] args) {

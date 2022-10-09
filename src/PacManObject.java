@@ -31,11 +31,15 @@ public class PacManObject extends GameObject {
         x+=speed;
 		}
     }
-	public void update() {
+	public void update(int x,int y) {
+		this.x = x;
+		this.y = y;
+		super.update();
 		
 	}
 	public void draw(Graphics g) {
 		g.setColor(Color.YELLOW);
 		g.fillOval(x, y, width, height);
+		
 	}
 }
